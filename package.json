@@ -1,0 +1,20 @@
+{
+  "name": "gpx-calculator",
+  "version": "1.0.0",
+  "description": "Gpx calculator between 2 routes",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Gpx",
+    "Calculator",
+    "JavaScript",
+    "TypeScript",
+    "Routes",
+    "Latitude",
+    "Longitude"
+  ],
+  "author": "Yojhan Atuesta",
+  "license": "ISC"
+}
