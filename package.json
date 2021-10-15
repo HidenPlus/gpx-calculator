@@ -18,6 +18,6 @@
   "author": "Yojhan Atuesta",
   "license": "ISC",
   "dependencies": {
-    "geolib": "^3.3.3"
+    "geolib": "3.3.3"
   }
 }

@@ -106,26 +106,30 @@ class CheckpointMaker {
         let result;
         let nearest = [];
         let indexes = [];
+        let passed = [];
         let near;
         let diferenceLat;
         pointsToCompare.map((point, index) => {
             near = geolib.findNearest(point, this.routePointsList);
             diferenceLat = this.distance2(near, point);
-            if (diferenceLat <= 0.05) {
+            console.log(diferenceLat)
+            if (diferenceLat <= 0.5) {
                 indexes.push(index);
                 nearest.push(near);
             }
         });
         for (let i = 0; indexes.length > i; i++) {
             if (i != 0) {
-                console.log(indexes[i - 1], (indexes[i] - 1));
                 if (indexes[i - 1] != (indexes[i] - 1)) {
                     result = { error: "no ordered indexes" };
-                    break;
                 } else {
                     result = { success: "all indexes sorted" };
+                    passed.push(indexes[i]);
                 }
             }
+        }
+        if (nearest.length == 0 || passed.length != (indexes.length - 1)) {
+            result = { error: "no ordered indexes" };
         }
         return result;
     }
