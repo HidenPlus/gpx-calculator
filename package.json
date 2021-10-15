@@ -16,5 +16,8 @@
     "Longitude"
   ],
   "author": "Yojhan Atuesta",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "geolib": "^3.3.3"
+  }
 }
