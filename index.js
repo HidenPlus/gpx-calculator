@@ -1,4 +1,4 @@
-// const CheckpointMaker = require("./CheckpointMaker");
+ const CheckpointMaker = require("./CheckpointMaker");
 // const Trackings = require("./UserTracking.json");
 // const TrackingsComparison = require("./UserTrackingComparison.json");
 
@@ -66,3 +66,5 @@
 // }else{
 //     console.log("pasa")
 // }
+
+module.exports = CheckpointMaker;
