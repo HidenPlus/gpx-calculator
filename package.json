@@ -1,6 +1,6 @@
 {
   "name": "gpx-calculator",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Gpx calculator between 2 routes",
   "main": "index.js",
   "scripts": {
